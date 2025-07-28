@@ -32,6 +32,26 @@ namespace AutoBattle
             _maxHp = maxHp;
             // 追加：属性
             _type = type;
+            TypeColor();
+        }
+
+        /** 追加：名前＋属性色 */
+        public void TypeColor()
+        {
+            if (_type == Type.Fire)
+            {
+                nameText.color = new Color(255f, 0f, 0f);
+            }
+
+            else if (_type == Type.Water)
+            {
+                nameText.color = new Color(0f, 0f, 255f);
+            }
+
+            else if (_type == Type.Grass)
+            {
+                nameText.color = new Color(0f, 255f, 0f);
+            }
         }
 
         /** 攻撃モーション */
