@@ -10,6 +10,7 @@ namespace AutoBattle
         Enemy
     }
 
+    /** 追加：所属 */
     public enum Type
     {
         Fire,
@@ -27,7 +28,7 @@ namespace AutoBattle
         public readonly string Name;
         /** 最大HP */
         public int MaxHp { get; private set; }
-        /** 属性 */
+        /** 追加：属性 */
         public readonly Type Type;
         /** 現在HP */
         public int Hp { get; private set; }
@@ -40,6 +41,7 @@ namespace AutoBattle
             Index = index;
             Name = name;
             MaxHp = maxHp;
+            // 追加：属性
             Type = type;
             Hp = MaxHp;
             Atk = atk;

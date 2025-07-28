@@ -20,7 +20,7 @@ namespace AutoBattle
         public int Index { get; private set; }
         /** 最大HP */
         private int _maxHp;
-        /** 属性 */
+        /** 追加：属性 */
         private Type _type;
 
         /** 初期化 */
@@ -30,6 +30,7 @@ namespace AutoBattle
             Index = index;
             nameText.text = unitName;
             _maxHp = maxHp;
+            // 追加：属性
             _type = type;
         }
 
